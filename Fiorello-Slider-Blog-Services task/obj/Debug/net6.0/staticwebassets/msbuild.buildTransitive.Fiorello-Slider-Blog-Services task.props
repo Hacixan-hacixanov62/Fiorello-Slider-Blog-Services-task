@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Fiorello-Slider-Blog-Services task.props" />
+</Project>
