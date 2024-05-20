@@ -13,9 +13,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
        options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 builder.Services.AddScoped<ISliderService, SliderService>();
-builder.Services.AddScoped<IBlogService, BlogService>();
+//builder.Services.AddScoped<IBlogService, BlogService>();
 builder.Services.AddScoped<ICategoryService,CategoryService>();
-builder.Services.AddScoped<IProductService, ProductService>();
+//builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();
 
@@ -26,7 +26,13 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.MapControllerRoute(
+            name: "areas",
+            pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+       
+
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+

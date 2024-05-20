@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public bool SoftDeleted { get; set; } = false;
-        public DateTime Createdate { get; set; } = DateTime.Now;
+        public DateTime CreateDate { get; set; } = DateTime.Now;
 
     }
 }

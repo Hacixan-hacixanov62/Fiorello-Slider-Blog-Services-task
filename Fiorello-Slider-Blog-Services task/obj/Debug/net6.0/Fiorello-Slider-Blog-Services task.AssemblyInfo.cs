@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fiorello-Slider-Blog-Services task")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebf3ceb4093149552820c609d9ae4871a4869794")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a620fe35a7ac8a3e07b26f90a3237eaecd0d707")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fiorello-Slider-Blog-Services task")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fiorello-Slider-Blog-Services task")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

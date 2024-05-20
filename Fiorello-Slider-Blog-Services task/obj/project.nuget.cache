@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IMKngUsV0QRKLjv+4Rplx/Vj+o5bj7yCH2uuCB0LfEju3OxnEMzjeaohnStQxZi9nCZS0FSwdO7J88TeJcUCBg==",
+  "dgSpecHash": "KzbKSEQkbKA/GtLHcjq+pfMKkZHi3oyo7pcVBKk2Gq+Cne+HaMHmDTQBHfCgEsRRX8MIXObYXQYTIKb9PUIg/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hacixanov\\Desktop\\Fiorello-Skider-Blog-Services-task\\Fiorello-Slider-Blog-Services task\\Fiorello-Slider-Blog-Services task.csproj",
+  "projectFilePath": "C:\\Asp.Net Tasks\\Fiorello-Skider-Blog-Services-task\\Fiorello-Slider-Blog-Services task\\Fiorello-Slider-Blog-Services task.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hacixanov\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Hacixanov\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

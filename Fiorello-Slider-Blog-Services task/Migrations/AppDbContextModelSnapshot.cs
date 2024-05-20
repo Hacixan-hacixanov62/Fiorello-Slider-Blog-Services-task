@@ -22,63 +22,6 @@ namespace Fiorello_Slider_Blog_Services_task.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Fiorello_Slider_Blog_Services_task.Models.Blog", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("Createdate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Image")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("SoftDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Blogs");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Createdate = new DateTime(2024, 5, 15, 16, 22, 4, 584, DateTimeKind.Local).AddTicks(4599),
-                            Description = "Reshadin blogu",
-                            Image = "blog-feature-img-1.jpg",
-                            SoftDeleted = false,
-                            Title = "title1"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Createdate = new DateTime(2024, 5, 15, 16, 22, 4, 584, DateTimeKind.Local).AddTicks(4612),
-                            Description = "Ilqarin blogu",
-                            Image = "blog-feature-img-3.jpg",
-                            SoftDeleted = false,
-                            Title = "title2"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Createdate = new DateTime(2024, 5, 15, 16, 22, 4, 584, DateTimeKind.Local).AddTicks(4613),
-                            Description = "Hacixanin blogu",
-                            Image = "blog-feature-img-4.jpg",
-                            SoftDeleted = false,
-                            Title = "title3"
-                        });
-                });
-
             modelBuilder.Entity("Fiorello_Slider_Blog_Services_task.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -87,7 +30,7 @@ namespace Fiorello_Slider_Blog_Services_task.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<DateTime>("Createdate")
+                    b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -101,6 +44,34 @@ namespace Fiorello_Slider_Blog_Services_task.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("Fiorello_Slider_Blog_Services_task.Models.Expert", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Fullname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Position")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("SoftDeleted")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Experts");
+                });
+
             modelBuilder.Entity("Fiorello_Slider_Blog_Services_task.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -112,7 +83,7 @@ namespace Fiorello_Slider_Blog_Services_task.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("Createdate")
+                    b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -131,7 +102,7 @@ namespace Fiorello_Slider_Blog_Services_task.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Product");
                 });
 
             modelBuilder.Entity("Fiorello_Slider_Blog_Services_task.Models.ProductImage", b =>
@@ -155,7 +126,7 @@ namespace Fiorello_Slider_Blog_Services_task.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductImages");
+                    b.ToTable("ProductImage");
                 });
 
             modelBuilder.Entity("Fiorello_Slider_Blog_Services_task.Models.Slider", b =>
@@ -166,7 +137,7 @@ namespace Fiorello_Slider_Blog_Services_task.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<DateTime>("Createdate")
+                    b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Image")
@@ -188,7 +159,7 @@ namespace Fiorello_Slider_Blog_Services_task.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<DateTime>("Createdate")
+                    b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
